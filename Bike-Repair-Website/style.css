@@ -105,3 +105,11 @@ a {
     text-decoration: none;
     color: white;
 }
+
+.mybutton {
+    background-color: white;
+    color: #FA4083;
+    padding: 11px 25px;
+    display: inline-block;
+    margin: 10px 0;
+}
