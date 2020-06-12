@@ -47,6 +47,7 @@ main {
     background-position: center;
     min-height: 250px;
     width: 30%;
+    
 }
 
 .card2 {
@@ -78,6 +79,7 @@ h1 {
     color: black;
     font-size: 3.25rem;
     margin-bottom: 0.5rem;
+    text-shadow: 0 5px 5px  rgba(17, 17, 17, 0.459);
 }
 
 h2 {
@@ -96,6 +98,9 @@ h2 {
 .card1, .card2, .card3 {
     padding: 50px;
     box-sizing: border-box;
+    box-shadow: 0 20px 20px  rgba(17, 17, 17, 0.8);
+    border-radius: 50px;
+
 }
 
 
@@ -106,10 +111,33 @@ a {
     color: white;
 }
 
+
+
 .mybutton {
+    border-radius: 20px;
+    box-shadow: 0 5px 5px  rgba(17, 17, 17, 0.459);
+}
+
+
+
+a.mybutton {
     background-color: white;
     color: #FA4083;
     padding: 11px 25px;
     display: inline-block;
-    margin: 10px 0;
+    margin: 50px 0;
+}
+
+.herobox2 img {
+    border-radius: 20px;
+}
+
+nav a.mybutton {
+    margin-left: 30px;
+}
+
+.navbutton {
+    border: 1px solid yellow;
+    padding: 11px 25px;
+    
 }
