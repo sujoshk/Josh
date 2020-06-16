@@ -1,10 +1,12 @@
 html {
-    height: 100%;
+    background-image: linear-gradient(#FC5E55, #FA4083);
 }
 
 
 body {
-    background-image: linear-gradient(#FC5E55, #FA4083);
+    background-image: url(./images/image-lion-background.png);
+    background-position: top-center;
+    background-repeat: no-repeat;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-size: 1.125rem;
@@ -24,6 +26,8 @@ header{
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    border-bottom: 2px solid yellow;
+    
     
 }
 
@@ -116,6 +120,12 @@ a {
 .mybutton {
     border-radius: 20px;
     box-shadow: 0 5px 5px  rgba(17, 17, 17, 0.459);
+
+}
+
+.mybutton:hover {
+    background-color: #0cdefa;
+    transition-duration: 1s;
 }
 
 
@@ -129,7 +139,7 @@ a.mybutton {
 }
 
 .herobox2 img {
-    border-radius: 20px;
+    border-radius: 50px;
 }
 
 nav a.mybutton {
@@ -139,5 +149,61 @@ nav a.mybutton {
 .navbutton {
     border: 1px solid yellow;
     padding: 11px 25px;
+    border-radius: 30px;
+    box-shadow: 1px 5px 5px  rgba(17, 17, 17, 0.459);
+    display: inline-block;
+    position: relative;
+    margin-top: 5px;
     
+}
+
+
+.tbox {
+    width: 47%;
+    padding: 20px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.testimonials {
+    margin: 30px 0;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* .tbox :last-child {
+    font-size: 0.8rem;
+} */
+
+.tbox p:last-of-type {
+    font-size: 0.8rem;
+    padding-left: 30px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 10px;
+    text-align: center;
+    
+}
+
+.navbutton:hover .dropdown-menu {
+    display: block;
+        
+}
+
+
+.dropdown-menu .navbutton {
+    width: 100px;
+    background-color: white;   
+    margin-left: -25px; 
+}
+
+.dropdown-menu .navbutton a {
+    
+    color: black;
 }
