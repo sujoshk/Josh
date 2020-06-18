@@ -22,7 +22,7 @@ a {
     /* always apply display flex to the parent of the item you are trying to apply the property to */
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 120px;
+    padding-top: 140px;
     
 }
 
@@ -63,9 +63,6 @@ header {
     margin-left: 10px;
 }
 
-.logo {
-    
-}
 
 
 .bold {
@@ -129,52 +126,61 @@ footer {
 /* Tablet View*/
 @media (max-width: 768px) {
 
-.col {
-    width: 49%;
-}
+    .col {
+        width: 49%;
+    }
 
 
-.hide-desktop-only {
-    display: block;
-}
+    .hide-desktop-only {
+        display: block;
+    }
 
-}
-
-
-/* Mobile View */
-@media (max-width: 300px) {
-
-.col {
-    width: 100%;
-}
-    
-.hide-mobile {
-    display: none;
-}
-}
-
-img {
-    
-    width: 250px;
         
+
+    header {
+        display: block;
+        text-align: center;
+    }
+
+
+    .header-container {
+        position: relative;
+    }
+
+
+    .container {
+        padding-top: 10px;
+    }
+
+
+
+    nav a {
+        display: block;
+
+    }
+
+    .logo {
+        
+        padding: 20px 0;
+    }
+
+    .button {
+        margin-left: 0;
+        
+    }
 }
 
-header {
-    display: block;
-    text-align: center;
+
+    /* Mobile View */
+    @media (max-width: 400px) {
+
+    .col {
+        width: 100%;
+    }
+        
+    .hide-mobile {
+        display: none;
+    }
 }
 
-nav a {
-    display: block;
 
-}
-
-.logo {
-    min-height: 20px;
-    padding: 20px 0;
-}
-
-.button {
-    margin-left: 0;
-    padding: 5px;
-}
