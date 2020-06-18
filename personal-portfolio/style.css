@@ -149,6 +149,7 @@ footer {
 
 
     .container {
+        min-height: 50px;
         padding-top: 10px;
     }
 
@@ -176,6 +177,10 @@ footer {
 
     .col {
         width: 100%;
+    }
+
+    .img {
+        max-width: 300px;
     }
         
     .hide-mobile {
