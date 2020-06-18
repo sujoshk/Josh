@@ -3,7 +3,16 @@
 
 body {
     margin: 0;
+    background-color: rgb(250, 246, 246)
 }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* REMEMBER: flex is always applied to the parent container of the elements you are trying to align */
 .container {
     
     min-height: 500px;
@@ -24,6 +33,48 @@ body {
     
 }
 
+
+
+header {
+    color: white;
+    max-width: 1024px;
+    min-height: 100px;
+    background-color: rgb(88, 124, 84);
+    /* this is to centre the content horizonally */
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    background-color: rgb(5, 36, 1);
+    min-height: 100px;
+    margin-bottom: 40px;
+    
+}
+
+.button {
+    padding: 10px 25px;
+    border-style: solid ;
+    border-width: 1px;
+    margin-left: 10px;
+}
+
+.logo {
+    
+}
+
+
+.bold {
+    font-weight: 700;
+}
+
+
+
+
+
+
 .hide-desktop-only {
     display: none;
 }
@@ -41,7 +92,27 @@ body {
     color: white;
     font-size: 0.875rem;
     padding: 10px 20px;
+    line-height: 1.1rem;
 }
+
+
+.footer-container {
+    background-color: rgb(19, 29, 18);
+    min-height: 100px;
+    margin-top: 40px;
+}
+
+
+footer {
+    max-width: 1024px;
+    min-height: 100px;
+    background-color: rgb(39, 252, 15);
+    /* this is to centre the content horizonally */
+    margin: 0 auto; 
+}
+
+
+
 
 
 /* this is to make the first line of the text bold */
@@ -85,3 +156,4 @@ img {
     width: 250px;
         
 }
+
