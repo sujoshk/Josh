@@ -1,16 +1,54 @@
 /* Desktop View */
 
-h1 {
-    color: limegreen;
-    font-family: 'Courier New', Courier, monospace;
+
+body {
+    margin: 0;
+}
+.container {
+    
+    min-height: 500px;
+    max-width: 1024;
+    margin: 0 auto;
+    display: flex; 
+    /* always apply display flex to the parent of the item you are trying to apply the property to */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.col {
+    
+    width: 30%;
+    margin-bottom: 40px;
+    background-color: rgb(123, 241, 107);
+    
+}
+
+.hide-desktop-only {
+    display: none;
+}
+
+
+.col img {
+    width: 100%;
+    height: auto;
 }
 
 
 
 
+.col p {
+    color: white;
+    font-size: 0.875rem;
+    padding: 10px 20px;
+}
 
 
-
+/* this is to make the first line of the text bold */
+.col p::first-line {
+    color: maroon;
+    font-weight: bold;
+}
 
 
 
@@ -18,9 +56,13 @@ h1 {
 /* Tablet View*/
 @media (max-width: 768px) {
 
-h1 {
-    color: orange;
-    font-family: cursive;
+.col {
+    width: 49%;
+}
+
+
+.hide-desktop-only {
+    display: block;
 }
 
 }
@@ -29,10 +71,17 @@ h1 {
 /* Mobile View */
 @media (max-width: 500px) {
 
-    h1 {
-        color: blue;
-        font-family: sans-serif;
-    }    
+.col {
+    width: 100%;
+}
     
+.hide-mobile {
+    display: none;
+}
+}
+
+img {
     
+    width: 250px;
+        
 }
