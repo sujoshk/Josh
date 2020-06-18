@@ -22,6 +22,7 @@ a {
     /* always apply display flex to the parent of the item you are trying to apply the property to */
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 120px;
     
 }
 
@@ -39,7 +40,7 @@ header {
     color: white;
     max-width: 1024px;
     min-height: 100px;
-    background-color: rgb(88, 124, 84);
+    background-color: rgb(88, 124, 84, 0.8);
     /* this is to centre the content horizonally */
     margin: 0 auto; 
     display: flex;
@@ -48,10 +49,11 @@ header {
 }
 
 .header-container {
-    background-color: rgb(5, 36, 1);
+    background-color: rgb(5, 36, 1, 0.2);
     min-height: 100px;
     margin-bottom: 40px;
-    
+    position: fixed;
+    width: 100%;
 }
 
 .button {
@@ -140,7 +142,7 @@ footer {
 
 
 /* Mobile View */
-@media (max-width: 500px) {
+@media (max-width: 400px) {
 
 .col {
     width: 100%;
@@ -157,3 +159,21 @@ img {
         
 }
 
+header {
+    display: block;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+
+}
+
+.logo {
+    min-height: 50px;
+    padding: 40px 0;
+}
+
+.button {
+    margin-left: 0;
+}
